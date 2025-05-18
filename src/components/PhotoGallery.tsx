@@ -332,7 +332,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onComplete, stopBgMu
               {/* Playlist Section */}
               <div className="backdrop-blur-lg bg-white/40 rounded-2xl p-8 shadow-2xl border-2 border-orange-300">
                 <h3 className="text-3xl font-bold text-orange-800 mb-6 flex items-center">
-                  <span className="mr-3">🎶</span> Hers's Some Songs for Your
+                  <span className="mr-3">🎶</span> Hers's Some Songs for You
                 </h3>
                 <div className="space-y-4">
                   {playlist.map((song, i) => (
