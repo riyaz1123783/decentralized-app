@@ -105,7 +105,7 @@ interface PhotoGalleryProps {
 // TimelineComponent based on your timeline example
 const TimelineComponent: React.FC<{ onProceed: () => void }> = ({ onProceed }) => {
   const timelineEvents = [
-    { icon: "🌟", title: "Starting From Here", desc: "You know very well, you texted me" },
+    { icon: "🌟", title: "Starting From Here", desc: "The story begins on a random evening when you unknowingly lit up my sky" },
     { icon: "💌", title: "We talked", desc: "We started talking and the connection was instant" },
     { icon: "🎵", title: "I Enjoyed talking to you", desc: "You have an amazing music taste, by the way" },
     { icon: "✨", title: "To be continued...", desc: "Our story is just beginning" }
