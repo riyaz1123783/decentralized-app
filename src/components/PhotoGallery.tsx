@@ -317,7 +317,17 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onComplete, stopBgMu
                       <p className="text-gray-700 text-sm text-center px-2">
                         When I met you, I had no idea i'd end up doing 
                         something special for you. You truly deserve it!
-                      </p>
+                           
+                            Dear, sometimes words aren't enough to say what the heart feels. But maybe this will come close..
+                                       Twinkle, twinkle little star
+                                       so far away, yet he keeps admiring her
+                                       whether she loves him back or not
+                                       every night, whenever she twinkles
+                                       he watches her from everywhere
+                                       longing for her from everywhere 
+                                       that's what love is and that's what you are
+                                                             My beloved ~
+                                                             </p>
                       <p className="text-sm text-gray-500 mt-2">
                         (Click again to flip back)
                       </p>
