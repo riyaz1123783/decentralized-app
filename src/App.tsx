@@ -7,7 +7,7 @@ import { Room } from './components/Room';
 import { CakeCeremony } from './components/CakeCeremony';
 import { FinalMessage } from './components/FinalMessage';
 import { PhotoGallery } from './components/PhotoGallery';
-import bgMusic from './components/music/tummile.mp3';
+import bgMusic from './components/music/piano.mp3';
 
 import CoverImg from './components/img/main.jpg'
 
@@ -207,8 +207,8 @@ function SongCard({ onSongChoice, audioRef }) {
           </motion.div>
         </div>
         <div className="w-full text-center mb-4">
-          <h3 className="text-2xl font-bold text-[#FF6F69]">Tum mile</h3>
-          <p className="text-sm text-gray-700">This song is dedicated to you</p>
+          <h3 className="text-2xl font-bold text-[#FF6F69]">音楽を流そう🎶</h3>
+          <p className="text-sm text-gray-700">♪</p>
         </div>
         <div className="flex items-center justify-center space-x-6 mb-4">
           <motion.button
@@ -269,8 +269,8 @@ function App() {
 
   // Simple array of messages to display in stage 0
   const messages = [
-    "It's your birthday and i had to do something special...",
-    "Soooo, I prepared this for youuuu",
+    "今日は君の誕生日。だから、特別なことをしたかったんだ…🎁...",
+    "だから、これを用意しました✨",
   ];
 
   const messageVariants = {
@@ -457,7 +457,7 @@ function App() {
                       }}
                       className="text-2xl font-bold text-[#FF6F69] relative z-10"
                     >
-                      Lesss Gooooo!
+                      さあ、はじめよう！
                     </motion.p>
                   </motion.div>
                 )}

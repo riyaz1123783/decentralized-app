@@ -1,24 +1,28 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import Pic1 from "./img/pic6.jpg";
-import Pic2 from "./img/pic5.jpg";
-import Pic3 from "./img/pic4.jpg";
-import pic4 from "./img/pic14.jpg";
-import pic5 from "./img/pic7.jpg";
-import pic6 from "./img/pic8.jpg";
-import pic7 from "./img/pic9.jpg";
-import pic8 from "./img/pic10.jpg";
-import pic9 from "./img/pic11.jpg";
-import pic10 from "./img/pic12.jpg";
-import pic11 from "./img/pic13.jpg";
-import Pic4 from "./img/extra3.jpg"; // Extra small photo
-import Pic5 from "./img/extra4.jpg"; // Extra small photo
+import Pic1 from "./img/image1.png";
+import Pic2 from "./img/image2.png";
+import Pic3 from "./img/image3.png";
+import pic4 from "./img/image4.png";
+import pic5 from "./img/image5.png";
+import pic6 from "./img/image6.png";
+import pic7 from "./img/image7.png";
+import pic8 from "./img/image8.png";
+import pic9 from "./img/image9.png";
+import pic10 from "./img/image10.png.jpg";
+import pic11 from "./img/image11.jpg";
+import pic12 from "./img/image12.png";
+import pic13 from "./img/image13.jgp.jpg";
+import pic14 from "./img/image14.jpg";
+import pic15 from "./img/image15.png";
+import Pic4 from "./img/extra1.png"; // Extra small photo
+import Pic5 from "./img/extra2.png"; // Extra small photo
 
 // Import local playlist music files
-import songA from "./music/blue.mp3";
-import songB from "./music/teenage .mp3";
-import songC from "./music/photograph.mp3";
+import songA from "./music/birthday1.mp3";
+import songB from "./music/birthday2.mp3";
+import songC from "./music/birthday3.mp3";
 
 
 
@@ -30,60 +34,77 @@ interface Photo {
 const photos: Photo[] = [
   {
     url: Pic1,
-    caption: "Happy Birthday to the one who makes every moment a comic adventure!",
+    caption: "",
   },
   {
     url: Pic2,
-    caption: "To the queen of quirky laughs and endless fun – keep shining bright!",
+    caption: "",
   },
   {
     url: Pic3,
-    caption: "Here's to a day as vibrant and unique as you are – let’s celebrate!",
+    caption: "",
 
   },
 
   {
     url: pic4,
-    caption: "hey dear 👋🏼",
+    caption: "",
   },
   
   {
     url: pic5,
-    caption: "Just Two of Us",
+    caption: "",
   },
 
   {
     url: pic6,
-    caption: "Obsessed With You",
+    caption: "",
   },
 
 {
     url: pic7,
-    caption: "Unforgettable moments with you ",
+    caption: "",
   },
 
 {
     url: pic8,
-    caption: " If Life was Repeated 1000 Times I Would Still Choose You",
+    caption: "",
   },
 
 {
     url: pic9,
-    caption: "Enjoy your day 😚",
+    caption: "",
   },
 
 {
     url: pic10,
-    caption: "🎉 Happy Birthday Love !!🎉 ",
+    caption: "",
   },
 
 {
     url: pic11,
-    caption: "Every Moment with you Is a Masterpiece",
+    caption: "",
   },
 
 
+{
+    url: pic12,
+    caption: "",
+  },
 
+{
+    url: pic13,
+    caption: "",
+  },
+
+{
+    url: pic14,
+    caption: "",
+  },
+{
+    url: pic15,
+    caption: "",
+  },
 
 ];
 
@@ -94,7 +115,7 @@ const extraPhotos: Photo[] = [
 ];
 
 // Playlist song names and corresponding local music files
-const playlist = ["Blue", "Teenange Dream", "Photograph" ];
+const playlist = ["YUIの『Happy Birthday to You You』🎶", "アニメバージョン🎶", "ドラえもんバージョン🎶" ];
 const songFiles = [songA, songB, songC];
 
 interface PhotoGalleryProps {
@@ -105,17 +126,17 @@ interface PhotoGalleryProps {
 // TimelineComponent based on your timeline example
 const TimelineComponent: React.FC<{ onProceed: () => void }> = ({ onProceed }) => {
   const timelineEvents = [
-    { icon: "🌟", title: "Starting From Here", desc: "The story begins on a random evening when you unknowingly lit up my sky character" },
-    { icon: "💌", title: "We talked", desc: "We started talking and the connection was instant" },
-    { icon: "🎵", title: "I Enjoyed talking to you", desc: "You have an amazing music taste, by the way" },
-    { icon: "✨", title: "To be continued...", desc: "Our story is just beginning" }
+    { icon: "🌟", title: "ここから始まる", desc: "物語の始まりは、ある日の偶然──君に初めて出会ったときから。" },
+    { icon: "💌", title: "私たちは話をした。", desc: "君は他の誰とも違うってすぐに感じた。" },
+    { icon: "🎵", title: "君と話すのが楽しくてたまらない", desc: "だんだん、君の声を聞くのが好きになっていったんだ" },
+    { icon: "✨", title: "つづく…📖💭", desc: "私たちの物語は、まだ始まったばかり。" }
   ];
 
   return (
     <div className="min-h-screen px-4 sm:px-8 md:px-10 py-10 bg-white animate-fade-in"
          style={{ fontFamily: "Comic Neue, Comic Sans MS, cursive" }}>
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-[#FF6F6F]">
-        📖 Our Story
+        📖 私たちのストーリー
       </h2>
       <div
         className="relative w-full max-w-4xl mx-auto p-8 rounded-2xl shadow-2xl"
@@ -146,7 +167,7 @@ const TimelineComponent: React.FC<{ onProceed: () => void }> = ({ onProceed }) =
           onClick={onProceed}
           className="px-8 py-4 bg-white text-black rounded-full hover:bg-[#FFB4B4] hover:text-white transition-transform duration-300 transform hover:scale-105 shadow-lg font-semibold"
         >
-          Continueee! 🎵
+          つづける！👉
         </button>
       </div>
       <style>{`
@@ -248,7 +269,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onComplete, stopBgMu
 
           {/* Header */}
           <h2 className="text-5xl text-center font-extrabold mb-12 bg-clip-text bg-white text-transparent bg drop-shadow-2xl">
-            Our Gallery & Memories!
+            思い出ギャラリー📷💞
           </h2>
 
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -315,21 +336,10 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onComplete, stopBgMu
                         A Special Note
                       </h4>
                       <p className="text-gray-700 text-sm text-center px-2">
-                        When I met you, I had no idea i'd end up doing 
-                        something special for you. You truly deserve it!
-                           
-                            Dear, sometimes words aren't enough to say what the heart feels. But maybe this will come close..
-                                       Twinkle, twinkle little star
-                                       so far away, yet he keeps admiring her
-                                       whether she loves him back or not
-                                       every night, whenever she twinkles
-                                       he watches her from everywhere
-                                       longing for her from everywhere 
-                                       that's what love is and that's what you are
-                                                             My beloved ~
+                        この世界に意味なんてなくても、君がいれば僕は嬉しいし、愛していますよ。
                                                              </p>
                       <p className="text-sm text-gray-500 mt-2">
-                        (Click again to flip back)
+                        (タップでもう一度ひっくり返してね)
                       </p>
                     </motion.div>
                   </motion.div>
@@ -342,7 +352,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onComplete, stopBgMu
               {/* Playlist Section */}
               <div className="backdrop-blur-lg bg-white/40 rounded-2xl p-8 shadow-2xl border-2 border-orange-300">
                 <h3 className="text-3xl font-bold text-orange-800 mb-6 flex items-center">
-                  <span className="mr-3">🎶</span> Hers's Some Songs for You
+                  <span className="mr-3">🎶</span> バースデーソングをいくつか用意したよ🎵🎉
                 </h3>
                 <div className="space-y-4">
                   {playlist.map((song, i) => (
@@ -376,7 +386,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onComplete, stopBgMu
                   whileTap={{ scale: 0.95 }}
                   onClick={onComplete}
                 >
-                  I wrote something epic for you, Agatha ❤️
+                  次へ
                 </motion.button>
               </div>
             </div>

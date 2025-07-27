@@ -182,9 +182,9 @@ export const CakeCeremony: React.FC<CakeCeremonyProps> = ({ onComplete }) => {
     >
       <div className="text-3xl mb-8 text-pink-600 font-semibold text-center">
         {!isCut ? (
-          <span>✨ Click the candles to light them, then drag down to cut the cake! ✨</span>
+          <span>✨ ろうそくをクリックして火をつけてねそのあと下にスライドしてケーキをカット！🎂🔪 ✨</span>
         ) : (
-          <span>🎉 Happy Birthday Agatha! 🎉</span>
+          <span>🎉 Happy Birthday Yuri! 🎉</span>
         )}
       </div>
 
@@ -194,7 +194,7 @@ export const CakeCeremony: React.FC<CakeCeremonyProps> = ({ onComplete }) => {
         onClick={changeTheme}
         whileHover={{ scale: 1.1, backgroundColor: '#FDE68A' }}
       >
-        Change Cake Theme
+       ケーキのテーマを変える✨
       </motion.button>
 
       {/* Sticky Notes repositioned (top-left and bottom-right) */}
@@ -354,7 +354,12 @@ export const CakeCeremony: React.FC<CakeCeremonyProps> = ({ onComplete }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            Wow you saw this! Happy birthday Agatha. Dear, I want to see you win, smash every dream, and overcome every barrier. I’m your biggest fan, your top supporter, and I’ll be with you every step of the way. You’re destined for greatness whether with or without me, I want to see you achieve it ❤️🫴
+ユリ、お誕生日おめでとう。
+今日という特別な日に、君のことを想いながら言いたいことがある。
+どんな夢でも、君なら必ず叶えられると信じてる。
+努力してる姿、笑ってる顔、全部が本当に素敵だよ。
+僕はずっと君の味方で、君の一歩一歩を見守っていたい。
+どんな未来でも、君が幸せでいられるように願ってる。
           </motion.div>
         )}
 
@@ -444,7 +449,7 @@ export const CakeCeremony: React.FC<CakeCeremonyProps> = ({ onComplete }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Close your eyes and make a wish!⭐️
+          目を閉じて、願い事をしてね🎂💫⭐️
         </motion.div>
       )}
     </motion.div>

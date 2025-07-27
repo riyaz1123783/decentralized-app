@@ -10,27 +10,27 @@ export const FinalMessage: React.FC = () => {
   const postcards = [
     {
       color: "red",
-      message: "You're the WILD CARD in my life - always full of surprises!",
+      message: "da",
       symbol: "🃏"
     },
     {
       color: "yellow",
-      message: "Like a REVERSE card, you turned my world upside down (in the best way)!",
+      message: "i",
       symbol: "🔄"
     },
     {
       color: "green",
-      message: "You + Me = The ultimate DRAW FOUR partnership!",
+      message: "su",
       symbol: "+4"
     },
     {
       color: "blue",
-      message: "Our friendship SKIPS all the boring parts!",
+      message: "ki",
       symbol: "⏭️"
     },
     {
       color: "purple",
-      message: "You make every day feel like a WINNING HAND!",
+      message: "😚",
       symbol: "🎯"
     }
   ];
@@ -56,7 +56,7 @@ export const FinalMessage: React.FC = () => {
           transition={{ delay: 0.3 }}
         >
           <h1 className="text-4xl font-bold text-center text-red-600 mb-8 drop-shadow-md">
-            SPECIAL POSTCARDS FOR YOU!
+           スペシャルポストカードをどうぞ📮🎴
           </h1>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -113,7 +113,7 @@ export const FinalMessage: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setPhase("game")}
               >
-                Special Message For You →
+                スペシャルメッセージへ進む 💖 →
               </motion.button>
             </motion.div>
           )}
@@ -128,7 +128,7 @@ export const FinalMessage: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <h2 className="text-3xl font-bold text-red-600 mb-6 text-center drop-shadow-sm">
-            CATCH THE HEART TO REVEAL YOUR SPECIAL MESSAGE!
+            ハートをキャッチして、特別なメッセージを見つけてね！
           </h2>
           
           <div className="relative w-64 h-64 bg-white/80 rounded-xl shadow-lg flex items-center justify-center mb-8">
@@ -159,7 +159,7 @@ export const FinalMessage: React.FC = () => {
           </div>
           
           <p className="text-gray-700 font-medium">
-            Drag and click the heart when you catch it!
+            ハートをキャッチしたら、ドラッグしてクリックしてね!
           </p>
         </motion.div>
       )}
@@ -183,12 +183,13 @@ export const FinalMessage: React.FC = () => {
           </motion.div>
           
           <h1 className="text-4xl font-bold text-center text-red-600 mb-6">
-            🎲 HAPPY BIRTHDAY AGATHA ! 🎲
+            🎲 🎉🎂 ユリ、お誕生日おめでとう！！ 🎂🎉 🎲
           </h1>
           
           <p className="text-lg text-gray-800 leading-relaxed font-semibold text-center">
-            Thanks for being the most fun, wild, and wonderful person in my life. 
-            Every day with you is like drawing the perfect card!
+          ユリ、いつも楽しくて優しくて、本当に素敵な人だよ。出会えてよかった。
+お誕生日おめでとう！これからの1年が笑顔でいっぱいの素敵な年になりますように。
+いつも元気で、願いごとが全部叶いますように。
           </p>
           
           <div className="mt-8 flex justify-center">

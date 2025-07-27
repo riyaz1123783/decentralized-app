@@ -111,8 +111,8 @@ export const Room: React.FC<RoomProps> = ({ onComplete }) => {
     >
       {/* Heading & Score */}
       <div className="absolute top-4 left-4 z-20">
-        <h1 className="text-3xl font-bold text-red-500 drop-shadow-lg">Let's see how many balloons you can pop!</h1>
-        <p className="text-xl text-purple-600">Your Score: {score}</p>
+        <h1 className="text-3xl font-bold text-red-500 drop-shadow-lg">何個の風船を割れるか、やってみよう🎈💥！</h1>
+        <p className="text-xl text-purple-600">あなたのスコア： {score}</p>
       </div>
 
       {/* Reward Message */}
@@ -123,10 +123,10 @@ export const Room: React.FC<RoomProps> = ({ onComplete }) => {
           animate={{ scale: 1, opacity: 1 }}
         >
           <h2 className="text-4xl font-bold text-yellow-600 text-center">
-            Bonus Reward Unlocked!
+            ボーナス報酬アンロック！🎁✨
           </h2>
           <p className="mt-4 text-lg text-gray-800 text-center">
-            Chocolate For You Yeyey!
+            チョコレートあげる〜！🍫イェーイ！
           </p>
         </motion.div>
       )}
@@ -214,7 +214,7 @@ export const Room: React.FC<RoomProps> = ({ onComplete }) => {
           onClick={onComplete}
         >
           <Sparkles className="w-5 h-5" />
-          Continue to Cake Ceremony →
+          続けてケーキセレモニーへ → 🎂
         </motion.button>
       )}
     </motion.div>
